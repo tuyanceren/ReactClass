@@ -1,16 +1,21 @@
+import ProductInfo from "./ProductInfo";
 import "./ProductItem.css";
 
-function ProductItem(props){
-    const {imageUrl, productName, productPrice}= props;
+function ProductItem({product}){
+    //const {product}= props;
+    const {imageUrl, productName, productPrice}= product;
     return(
         <div className="product-item">
             <div>
                 <img src={imageUrl} alt="" />
             </div>
-            <div className="product-info">
+            <ProductInfo >
                 <h2>{productName}</h2>
-                <span>{productPrice}₺</span>
-            </div>
+                <span>{productPrice}₺</span> 
+            </ProductInfo>
+                
+            
+            
             
         </div>
     )
