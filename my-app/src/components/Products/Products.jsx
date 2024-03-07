@@ -1,8 +1,8 @@
 import ProductItem from "./ProductItem";
 import "./Products.css";
-import {productData} from "../productData";
+import {productData} from "../../productData";
 
-function Products(){
+const Products = () =>{
     return(
         <div className="product-wrapper">
             <h1>Product</h1>

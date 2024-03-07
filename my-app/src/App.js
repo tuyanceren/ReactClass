@@ -1,7 +1,6 @@
-import ProductItem  from "./components/ProductItem";
-
 import './App.css';
-import Products from "./components/Products";
+import Products from "./components/Products/Products.jsx";
+
 
 
 function App() {
